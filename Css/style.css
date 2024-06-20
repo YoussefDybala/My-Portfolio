@@ -16,7 +16,9 @@ body{
     background-image: linear-gradient( rgb(61, 100, 114) , rgb(20, 78, 20) );
     background-repeat: no-repeat;
 }
-
+a {
+    text-decoration: none;
+}
 .containar{
     padding-left: 15px;
     padding-right: 15px;
@@ -306,3 +308,92 @@ body{
             font-size: 25px;
         }
     /* /////////// End skills ///////////// */
+    /* ////////// start projects ///////////  */
+        #Projects {
+            padding: 70px 0;
+        }
+        #Projects .boxes {
+            gap: 20px;
+        }
+        #Projects .proj-box {
+            width: 360px;
+            overflow: hidden;
+            height: 250px;
+            transition: 0.3s;
+            border-radius: 12px;
+        }
+        #Projects .proj-box img{
+            width: 360px;
+            height: 250px;
+        }
+        #Projects .proj-box:hover .proj-cont {
+            top: -100px;
+        }
+        #Projects .proj-box .proj-cont {
+            text-align: center;
+            width: 360px;
+            background-color: #0000007e;
+            position: relative;
+            height: 100px;
+            top: 0;
+            transition: 0.3s;
+        }
+        #Projects .proj-box .proj-cont h3 {
+            margin-bottom: 20px;
+            padding-top: 10px;
+            color: white;
+        }
+        #Projects .proj-box .proj-cont span a {
+            color: black;
+            background-color: skyblue;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 8px;
+            color: white;
+        }
+        @media (max-width : 768px ) {
+            #Projects .proj-box {
+                width: 300px;
+                height: 250px;
+                background-color: red;
+                overflow: hidden;
+            }
+            #Projects .proj-box:hover .proj-cont {
+                top: -100px;
+            }
+            #Projects .proj-box img{
+                width: 300px;
+                height: 250px;
+            }
+            #Projects .proj-box .proj-cont {
+                text-align: center;
+                width: 300px;
+                height: 100px;
+                background-color: #00000058;
+                position: relative;
+                top: 0;
+            }
+        }
+    /* ////////// end projects ///////////  */
+    /* //////////// start contact //////////  */
+    .con-cont {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+        .c-c1 {
+            font-size: 25px;
+        }
+        .c-c1 p {
+            margin: 10px 0;
+        }
+        .c-c2 a {
+            color: black;
+            font-size: 25px;
+            padding: 10px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+        .c-c2 a:hover {
+            color: skyblue;
+        }
+    /* //////////// end contact //////////  */
