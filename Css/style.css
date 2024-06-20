@@ -1,0 +1,305 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: linear-gradient( rgb(61, 100, 114) , rgb(20, 78, 20) );
+    background-repeat: no-repeat;
+}
+
+.containar{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+    @media (min-width: 768px) {
+        .containar {
+            width: 750px;
+        }
+        
+    }
+    @media (min-width: 992px) {
+        .containar {
+            width: 992px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .containar {
+            width: 1170px;
+        }
+    }
+
+
+    /* /////////// start header /////////// */
+    header .containar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    nav {
+        overflow: hidden;
+    }
+    nav i {
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    @media (max-width :768px) {
+        nav i {
+            position: relative;
+            left: 50px;
+            top: 5px;
+        }
+    }
+    nav li:hover {
+        padding: 10px;
+    }
+    nav .x {
+        background-color: red;
+        width: fit-content;
+        padding: 8px;
+        border-radius: 50%;
+        color: white;
+        left: 68px;
+        top: 4px;
+        position: relative;
+        cursor: pointer;
+       
+    }
+    ul {
+        position: relative;
+        top: -280px;
+        transition: 0.3s;
+        background-color: #0000006f;
+        width: 100px;
+    }
+    nav ul li {
+    padding: 10px 0;    
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .down {
+    position: relative;
+    top: 0;
+  }
+.logo i {
+    font-size: 35px;
+    color: antiquewhite;
+}
+.logo  .rightt {
+    font-size: 28px;
+    color: #000000;
+    position: relative;
+    left: -34px;
+    top: 5px;
+}
+
+    /* /////////// End  header /////////// */
+
+    /* ////////////// start landing /////////////  */
+    .landing {
+    padding-bottom: 70px ;
+    }
+    .land-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .land-cont p {
+        font-size: 18px;
+    }
+.land-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+@media (max-width :768px) {
+    .land-content {
+        text-align: center;
+    }
+    .land-image {
+        text-align: center;
+    }
+    .land-image img {
+        width: 300px;
+        height: 300px;
+        margin: 15px 0;
+        text-align: center;
+        position: relative;
+        left: 35px;
+    }
+}
+    /* ////////////// End landing /////////////  */
+    /* //////////// start services ////////  */
+    #Services {
+        padding-bottom: 70px ;
+    }
+    .main-title {
+        padding: 70px 0;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .main-title h3 {
+        border: 3px solid black;
+        width: fit-content;
+        margin: 1px auto;
+        padding: 8px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .main-title h3:hover{
+        color: white;
+        background-color: black;
+    }
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px ;
+    }
+    .boxes .serv-box {
+        width: 300px;
+        height: 250px;
+        border-radius: 12px;
+        background-color: #cbcbcb;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxes .serv-box i {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    .boxes .serv-box h3 {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .boxes .serv-box p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+    .boxes .serv-box div {
+        background-color: rgb(89, 89, 220);
+        padding: 8px;
+        border-radius: 12px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .boxes .serv-box div:hover{
+        color:rgb(89, 89, 220) ;
+        background-color: rgb(255, 255, 255);
+    }
+    /* //////////// end services ////////  */
+    /* /////////// start skills /////////////  */
+        #Skills{
+            padding: 70px 0;
+        }
+         #Skills .boxes .skill-box1 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-left: 5px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #Skills .boxes .skill-box2 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-left: 5px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #Skills .boxes .skill-box3 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-left: 5px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #Skills .boxes .skill-box4 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-left: 5px solid #000000;
+            border-bottom: 5px solid #000000;
+            border-right: 5px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #Skills .boxes .skill-box5 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         #Skills .boxes .skill-box6 {
+            width: 250px;
+            height: 250px;
+            background-color: #947f7f;
+            border: 5px solid white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #Skills .boxes  img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #Skills .boxes  h3 {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        #Skills .boxes p {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    /* /////////// End skills ///////////// */
