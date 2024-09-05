@@ -5,16 +5,19 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    --main-color: #0ad1c8
+}
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  
 }
 ul {
     list-style: none;
 }
 body{
     font-family: 'Work Sans', sans-serif;
-    background-image: linear-gradient( rgb(61, 100, 114) , rgb(20, 78, 20) );
-    background-repeat: no-repeat;
+    background-color: #26242e !important;
+
 }
 a {
     text-decoration: none;
@@ -45,62 +48,18 @@ a {
 
 
     /* /////////// start header /////////// */
-    header .containar {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    nav {
-        overflow: hidden;
-    }
-    nav i {
-        font-size: 25px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    @media (max-width :768px) {
-        nav i {
-            position: relative;
-            left: 50px;
-            top: 5px;
-        }
-    }
-    nav li:hover {
-        padding: 10px;
-    }
-    nav .x {
-        background-color: red;
-        width: fit-content;
-        padding: 8px;
-        border-radius: 50%;
-        color: white;
-        left: 68px;
-        top: 4px;
+    .navbar-nav li a {
+        color: var(--main-color);
+        font-size: 20px;
         position: relative;
-        cursor: pointer;
-       
+        
     }
-    ul {
-        position: relative;
-        top: -280px;
-        transition: 0.3s;
-        background-color: #0000006f;
-        width: 100px;
+    .toggle {
+        color: var(--main-color) !important;
     }
-    nav ul li {
-    padding: 10px 0;    
-    transition: 0.3s;
-    color: white;
-    cursor: pointer;
-    margin-left: 15px;
-  }
-  .down {
-    position: relative;
-    top: 0;
-  }
 .logo i {
     font-size: 35px;
-    color: antiquewhite;
+    color: var(--main-color);
 }
 .logo  .rightt {
     font-size: 28px;
@@ -109,7 +68,9 @@ a {
     left: -34px;
     top: 5px;
 }
-
+.nav-link:hover {
+    color: antiquewhite !important; 
+}
     /* /////////// End  header /////////// */
 
     /* ////////////// start landing /////////////  */
@@ -121,9 +82,51 @@ a {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        height: 600px;
+        color: white;
     }
+    .land-cont {
+        text-align: 
+     
+    }
+.lorem {
+    font-weight: normal;
+}
+@media (max-width : 768px) {
+    .land-cont {
+        text-align: center;
+        margin: auto;
+    }
+}
+    /* @keyframes slide {
+        100%{
+            top: -300px;
+            
+        }
+    } */
+    /* .text-swap li span {
+        position: relative;
+    }
+    .text-swap li span::after {
+        content: '';
+        position: absolute; 
+        left: -3px;
+        top: 2px;
+        border-left: 3px solid var(--main-color);
+        width: 100%;
+        height: 100%;
+        background-color: #26242e;
+        animation: typing 2.5s steps(10) infinite;
+    }
+    @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    } */
     .land-cont p {
         font-size: 18px;
+        font-weight: bold;
     }
 .land-image img {
     width: 300px;
@@ -166,6 +169,7 @@ a {
         padding: 8px;
         border-radius: 8px;
         transition: 0.3s;
+        color: var(--main-color);
     }
     .main-title h3:hover{
         color: white;
@@ -182,16 +186,18 @@ a {
         width: 300px;
         height: 250px;
         border-radius: 12px;
-        background-color: #cbcbcb;
+        background-color: #101010;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        color: white;
     }
     .boxes .serv-box i {
         font-size: 30px;
         margin-bottom: 8px;
+        color: var(--main-color);
     }
     .boxes .serv-box h3 {
         font-size: 25px;
@@ -203,7 +209,7 @@ a {
         margin-bottom: 8px;
     }
     .boxes .serv-box div {
-        background-color: rgb(89, 89, 220);
+        background-color: var(--main-color);
         padding: 8px;
         border-radius: 12px;
         color: white;
@@ -212,7 +218,7 @@ a {
         transition: 0.3s;
     }
     .boxes .serv-box div:hover{
-        color:rgb(89, 89, 220) ;
+        color:var(--main-color);
         background-color: rgb(255, 255, 255);
     }
     /* //////////// end services ////////  */
@@ -223,8 +229,8 @@ a {
          #Skills .boxes .skill-box1 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-left: 5px solid #000000;
             border-radius: 50%;
             display: flex;
@@ -235,8 +241,8 @@ a {
          #Skills .boxes .skill-box2 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-left: 5px solid #000000;
             border-radius: 50%;
             display: flex;
@@ -247,8 +253,8 @@ a {
          #Skills .boxes .skill-box3 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-left: 5px solid #000000;
             border-bottom: 5px solid #000000;
             border-radius: 50%;
@@ -260,8 +266,8 @@ a {
          #Skills .boxes .skill-box4 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-left: 5px solid #000000;
             border-bottom: 5px solid #000000;
             border-right: 5px solid #000000;
@@ -274,8 +280,8 @@ a {
          #Skills .boxes .skill-box5 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -285,8 +291,8 @@ a {
          #Skills .boxes .skill-box6 {
             width: 250px;
             height: 250px;
-            background-color: #947f7f;
-            border: 5px solid white;
+            background-color: #101010;
+            border: 5px solid var(--main-color);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -301,11 +307,13 @@ a {
         #Skills .boxes  h3 {
             margin-bottom: 10px;
             font-size: 25px;
+            color: var(--main-color);
         }
         #Skills .boxes p {
             margin-bottom: 10px;
             font-weight: bold;
             font-size: 25px;
+            color: white;
         }
     /* /////////// End skills ///////////// */
     /* ////////// start projects ///////////  */
@@ -316,62 +324,94 @@ a {
             gap: 20px;
         }
         #Projects .proj-box {
-            width: 360px;
+            width: 550px;
             overflow: hidden;
-            height: 250px;
+            height: fit-content;
             transition: 0.3s;
-            border-radius: 12px;
+            border: 3px solid var(--main-color);
+            border-radius: 6px;
+           
         }
-        #Projects .proj-box img{
-            width: 360px;
-            height: 250px;
+        #Projects .proj-box:hover img {
+            filter: grayscale(70%);
         }
-        #Projects .proj-box:hover .proj-cont {
-            top: -100px;
+        #Projects .proj-box h2 {
+            background-color: var(--main-color);
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 6px;
         }
-        #Projects .proj-box .proj-cont {
-            text-align: center;
-            width: 360px;
-            background-color: #0000007e;
+        #Projects .proj-box .box-cont1 {
+        padding: 10px;
+        gap: 20px;
+        text-align: center;
+        }
+        #Projects .proj-box .box-cont1 img{
+        width: 250px;
+        border: 1px solid var(--main-color);
+        border-radius: 6px;
+        transition: 0.5s;
+        height: 136px;
+        }
+        #Projects .proj-box .box-cont1 p{
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        #Projects .proj-box .box-cont2 {
+            padding: 10px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #Projects .proj-box .box-cont2 img{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            transition: 0.5s;
+        }
+        #Projects .proj-box .box-cont2 div span{
+        text-align: center;
+        transform: rotate(30deg);
+        }
+        #Projects .proj-box .box-cont2 div span a{
+            text-decoration: none;
+            color: white;
+            background-color: var(--main-color);
+            font-size: 18px;
+            font-weight: bold;
             position: relative;
-            height: 100px;
-            top: 0;
-            transition: 0.3s;
-        }
-        #Projects .proj-box .proj-cont h3 {
-            margin-bottom: 20px;
-            padding-top: 10px;
-            color: white;
-        }
-        #Projects .proj-box .proj-cont span a {
-            color: black;
-            background-color: skyblue;
-            font-size: 20px;
-            padding: 8px;
+            top: 10px;
+            margin-inline: 5px;
+         padding: 10px;
             border-radius: 8px;
-            color: white;
         }
+
         @media (max-width : 768px ) {
             #Projects .proj-box {
                 width: 300px;
-                height: 250px;
-                background-color: red;
+                height: fit-content;
                 overflow: hidden;
             }
-            #Projects .proj-box:hover .proj-cont {
-                top: -100px;
+            #Projects .proj-box .box-cont1 {
+                flex-direction: column;
             }
-            #Projects .proj-box img{
-                width: 300px;
-                height: 250px;
+            #Projects .proj-box .box-cont1 img{
+                margin: auto;
             }
-            #Projects .proj-box .proj-cont {
-                text-align: center;
-                width: 300px;
-                height: 100px;
-                background-color: #00000058;
-                position: relative;
-                top: 0;
+            #Projects .proj-box .box-cont2 {
+                flex-direction: column;
+            }
+            #Projects .proj-box .box-cont2 img {
+               position: relative;
+               top: -18px;
+            }
+            #Projects .proj-box .box-cont2 div span a{
+                top: -8px;
             }
         }
     /* ////////// end projects ///////////  */
@@ -380,20 +420,101 @@ a {
         text-align: center;
         padding-bottom: 50px;
     }
-        .c-c1 {
-            font-size: 25px;
+
+        .c-c1 .p-1  {
+          color: white;
+          font-size: 39px;
+          font-weight: bold;
         }
+        .c-c1 .p-2 {
+          color: var(--main-color);
+          font-size: 25px;
+          font-weight: bold;
+        }
+        .c-c1 .p-3 {
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
         .c-c1 p {
             margin: 10px 0;
+            
         }
         .c-c2 a {
-            color: black;
             font-size: 25px;
             padding: 10px;
             margin-bottom: 30px;
             transition: 0.3s;
+            color: white;
+            border: 2px solid var(--main-color);
+            border-radius: 55%;
         }
         .c-c2 a:hover {
-            color: skyblue;
+            color: var(--main-color);
         }
     /* //////////// end contact //////////  */
+    /* ///////////// start footer //////////////  */
+        .footer {
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .footer div{
+         width: 300px;
+         padding: 40px;
+        }
+        .footer .f1 .c-c2 a {
+            position: relative;
+            left: -37px;
+            font-size: 20px;
+            border-radius: 0;
+            border: 0;
+            color: var(--main-color);
+        }
+        .footer div h3{
+            color: var(--main-color);
+            text-align: left;
+        }
+        .footer div h2{
+            color: var(--main-color);
+            text-align: left;
+            font-size: 30px;
+        }
+        .footer div p{
+            color: white;
+            text-align: left;
+            font-size: 15px;
+        }
+        .footer div ul li{
+            color: white;
+            text-align: left;
+            position: relative;
+            left: -31px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .footer div ul li:hover{
+            margin-left: 10px;
+        }
+        .footer div ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width :768px) {
+            .footer {
+                background-color: black;
+                display: flex;
+                flex-direction: column;    
+                justify-content: center;
+                align-items: center;    
+                gap: 0;        
+            }
+            .footer div{
+             padding: 25px;
+             
+            }
+        }
+    /* ///////////// end footer //////////////  */
