@@ -22,6 +22,36 @@ body{
 a {
     text-decoration: none;
 }
+.up{
+    position: fixed;
+    font-size: 25px;
+    right: -50px;
+    bottom: 12px;
+    color: white;
+    background-color: var(--main-color);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.2s;
+    z-index: 9999999999999999999999;
+
+  }
+  .up.show{
+    right: 10px;
+  }
+  .slide {
+    animation: slide 1.5s ease-in-out;
+  }
+  @keyframes slide {
+    from {
+      transform: translateY(200px);
+      opacity: 0.3;
+    }
+    to {
+      transform: translateY(0);
+    opacity: 1;
+    }
+  }
 .containar{
     padding-left: 15px;
     padding-right: 15px;
@@ -85,10 +115,7 @@ a {
         height: 600px;
         color: white;
     }
-    .land-cont {
-        text-align: 
-     
-    }
+
 .lorem {
     font-weight: normal;
 }
@@ -125,12 +152,16 @@ a {
         }
     } */
     .land-cont p {
-        font-size: 18px;
+        font-size: 30px;
         font-weight: bold;
     }
+    .auto-type {
+        color: var(--main-color);
+       
+    }
 .land-image img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -281,7 +312,7 @@ a {
             width: 250px;
             height: 250px;
             background-color: #101010;
-            border: 5px solid var(--main-color);
+            border: 5px solid black;
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -292,7 +323,7 @@ a {
             width: 250px;
             height: 250px;
             background-color: #101010;
-            border: 5px solid var(--main-color);
+            border: 5px solid black;
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -441,14 +472,16 @@ a {
             margin: 10px 0;
             
         }
-        .c-c2 a {
+        .c-c2 i {
+            width: 50px;
+            height: 50px;
             font-size: 25px;
             padding: 10px;
             margin-bottom: 30px;
             transition: 0.3s;
             color: white;
             border: 2px solid var(--main-color);
-            border-radius: 55%;
+            border-radius: 50%;
         }
         .c-c2 a:hover {
             color: var(--main-color);
@@ -459,20 +492,26 @@ a {
             background-color: black;
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 0px;
         }
         .footer div{
-         width: 300px;
+         width: 330px;
          padding: 40px;
         }
-        .footer .f1 .c-c2 a {
+        .footer .f1 .c-c22 i {
+            width: 42px;
+            height: 42px;
+            font-size: 25px;
+            border: 2px solid var(--main-color);
+            margin-bottom: 30px;
+            transition: 0.3s;
+            color: white;
+            padding: 8px;
+            border-radius: 50%;
             position: relative;
-            left: -37px;
-            font-size: 20px;
-            border-radius: 0;
-            border: 0;
-            color: var(--main-color);
+            left: -50px;
         }
+
         .footer div h3{
             color: var(--main-color);
             text-align: left;
@@ -515,6 +554,19 @@ a {
             .footer div{
              padding: 25px;
              
+            }
+            .footer .f1 .c-c22 i {
+                width: 42px;
+                height: 42px;
+                font-size: 25px;
+                border: 2px solid var(--main-color);
+                margin-bottom: 30px;
+                transition: 0.3s;
+                color: white;
+                padding: 8px;
+                border-radius: 50%;
+                position: relative;
+                left: -30px;
             }
         }
     /* ///////////// end footer //////////////  */
